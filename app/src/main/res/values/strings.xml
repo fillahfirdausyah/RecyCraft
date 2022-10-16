@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">RecyCraft</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recycraft">RecyCraft.</string>
+    <string name="don_t_have_an_account">Don\'t Have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="already_have_an_account">Already Have an account?</string>
+    <string name="username">Username</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="welcome">Welcome</string>
+    <string name="idr">IDR.</string>
+    <string name="_10000000">1000000</string>
+    <string name="top_up">TOP UP</string>
+    <string name="home">Home</string>
+    <string name="account">Account</string>
+    <string name="profile">Profile</string>
+    <string name="info">Info</string>
+    <string name="logout">Logout</string>
 </resources>
