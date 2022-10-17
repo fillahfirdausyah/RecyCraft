@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.amikomsd.recycraft.fragment.HomeFragment"
+        android:name="com.amikomsd.recycraft.ui.fragment.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -40,7 +40,7 @@
     </fragment>
     <fragment
         android:id="@+id/marketFragment"
-        android:name="com.amikomsd.recycraft.fragment.MarketFragment"
+        android:name="com.amikomsd.recycraft.ui.fragment.MarketFragment"
         android:label="fragment_market"
         tools:layout="@layout/fragment_market" >
         <action
@@ -52,7 +52,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.amikomsd.recycraft.fragment.ProfileFragment"
+        android:name="com.amikomsd.recycraft.ui.fragment.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" >
         <action

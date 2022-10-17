@@ -1,13 +1,12 @@
-package com.amikomsd.recycraft
+package com.amikomsd.recycraft.ui.splash
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import com.amikomsd.recycraft.databinding.ActivitySplashBinding
+import com.amikomsd.recycraft.ui.auth.LoginActivity
 
 class SplashActivity : AppCompatActivity() {
     lateinit var binding : ActivitySplashBinding

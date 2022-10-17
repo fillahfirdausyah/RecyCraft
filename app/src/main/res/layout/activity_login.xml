@@ -9,7 +9,7 @@
     android:padding="20dp"
     android:gravity="center"
     android:background="@color/BackgroundColor"
-    tools:context=".LoginActivity">
+    tools:context=".ui.auth.LoginActivity">
 
 
     <androidx.appcompat.widget.AppCompatTextView

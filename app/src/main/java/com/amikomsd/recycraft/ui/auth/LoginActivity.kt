@@ -1,9 +1,10 @@
-package com.amikomsd.recycraft
+package com.amikomsd.recycraft.ui.auth
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.amikomsd.recycraft.databinding.ActivityLoginBinding
+import com.amikomsd.recycraft.ui.MainActivity
 
 class LoginActivity : AppCompatActivity() {
     
@@ -20,7 +21,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.tvSignUp.setOnClickListener {
-            val a = Intent(this,RegistActivity::class.java)
+            val a = Intent(this, RegistActivity::class.java)
             startActivity(a)
         }
     }

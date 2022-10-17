@@ -10,7 +10,7 @@
     android:padding="20dp"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".SplashActivity">
+    tools:context=".ui.splash.SplashActivity">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/img_profile_user"

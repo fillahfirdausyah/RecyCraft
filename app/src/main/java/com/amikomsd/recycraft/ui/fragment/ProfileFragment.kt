@@ -1,4 +1,4 @@
-package com.amikomsd.recycraft.fragment
+package com.amikomsd.recycraft.ui.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

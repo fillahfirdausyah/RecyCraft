@@ -1,10 +1,11 @@
-package com.amikomsd.recycraft
+package com.amikomsd.recycraft.ui.auth
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
 import com.amikomsd.recycraft.databinding.ActivityRegistBinding
+import com.amikomsd.recycraft.ui.MainActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
