@@ -1,4 +1,4 @@
-package com.amikomsd.recycraft.fragment
+package com.amikomsd.recycraft.ui.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,8 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.amikomsd.recycraft.LoginActivity
-import com.amikomsd.recycraft.R
+import com.amikomsd.recycraft.ui.auth.LoginActivity
 import com.amikomsd.recycraft.databinding.FragmentHomeBinding
 
 
