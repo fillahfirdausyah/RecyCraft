@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_login"
+            app:civ_border_color="@color/BackgroundColor"
+            app:civ_border_width="8dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="11dp"
+            android:textStyle="bold"
+            android:textColor="@color/light_gray"
+            android:layout_toEndOf="@+id/ivProfile"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/welcome"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/ivProfile"
+            android:text="@string/username"
+            android:textColor="@color/SecondaryColor"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_notif" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginVertical="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_bg_set"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icWallet"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_wallet"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="30sp"
+            android:textColor="@color/dark_late_gray"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/icWallet"
+            android:text="@string/idr" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNominal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="25sp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/tvCurrency"
+            android:text="@string/_10000000" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTopUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/ThirdColor"
+            android:layout_alignParentEnd="true"
+            android:text="@string/top_up" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
