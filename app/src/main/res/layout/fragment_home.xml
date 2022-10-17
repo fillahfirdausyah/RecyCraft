@@ -11,12 +11,14 @@
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:paddingVertical="20dp"
+        android:paddingStart="20dp"
+        android:background="@color/BackgroundColor"
+        android:paddingEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/ivProfile"
@@ -41,6 +43,7 @@
             android:textSize="18sp" />
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUserName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/welcome"
@@ -57,63 +60,256 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:src="@drawable/ic_notif" />
+
     </RelativeLayout>
 
-    <RelativeLayout
+    <LinearLayout
+        android:id="@+id/lyCurency"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginVertical="20dp"
+        android:layout_height="60dp"
         android:orientation="horizontal"
-        android:background="@drawable/rounded_bg_set"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/bg_currency"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/icWallet"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="20dp"
-            android:layout_centerVertical="true"
-            android:src="@drawable/ic_wallet"/>
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tvCurrency"
+        <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:fontFamily="@font/poppins_semibold"
-            android:textSize="30sp"
-            android:textColor="@color/dark_late_gray"
-            android:layout_marginStart="30dp"
-            android:layout_toEndOf="@+id/icWallet"
-            android:text="@string/idr" />
+            android:layout_height="match_parent">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tvNominal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:fontFamily="@font/poppins_medium"
-            android:textSize="25sp"
-            android:layout_marginStart="10dp"
-            android:layout_toEndOf="@+id/tvCurrency"
-            android:text="@string/_10000000" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/icWallet"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/wallet"/>
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tvTopUp"
-            android:layout_width="wrap_content"
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCurrency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/icWallet"
+                android:layout_centerVertical="true"
+                android:text="Rp."
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="15sp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTotalCurency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/tvCurrency"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/_10000000"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/icCoin"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_coin"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTotaCoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/icCoin"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/_10000000"
+                android:textSize="15sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTopUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/tvTotaCoin"
+                android:fontFamily="@font/poppins_semibold"
+                android:textStyle="bold"
+                android:textColor="@color/PremiereColor"
+                android:textAlignment="center"
+                android:layout_alignParentRight="true"
+                android:text="Top\nUp"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="30dp"
+        android:padding="10dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lyCurency">
+
+        <LinearLayout
+            android:id="@+id/lyPickTrash"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/rounded_bg_second"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:civ_border_color="@color/SecondaryColor"
+                app:civ_border_width="2dp"
+                android:src="@drawable/ic_picture_empty" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_light"
+                android:textStyle="bold"
+                android:textColor="@color/dark_late_gray"
+                android:text="@string/pick_trash" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:fontFamily="@font/poppins_medium"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginEnd="20dp"
-            android:textColor="@color/ThirdColor"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_bg_second"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:civ_border_color="@color/SecondaryColor"
+                app:civ_border_width="2dp"
+                android:src="@drawable/ic_picture_empty" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:textStyle="bold"
+                android:textColor="@color/dark_late_gray"
+                android:text="@string/premium"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
-            android:text="@string/top_up" />
+            android:gravity="center"
+            android:background="@drawable/rounded_bg_second"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:civ_border_color="@color/SecondaryColor"
+                app:civ_border_width="2dp"
+                android:src="@drawable/ic_picture_empty" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:textStyle="bold"
+                android:textColor="@color/dark_late_gray"
+                android:text="@string/shop"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:layout_marginStart="60dp"
+        android:gravity="center"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
+
+        <LinearLayout
+            android:id="@+id/lyMaps"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg_second"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_picture_empty"
+                app:civ_border_color="@color/SecondaryColor"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:textStyle="bold"
+                android:textColor="@color/dark_late_gray"
+                android:text="@string/maps" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_bg_second"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_picture_empty"
+                app:civ_border_color="@color/SecondaryColor"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:textStyle="bold"
+                android:textColor="@color/dark_late_gray"
+                android:text="@string/redeem" />
+
+        </LinearLayout>
+
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,4 +26,22 @@
     <string name="profile">Profile</string>
     <string name="info">Info</string>
     <string name="logout">Logout</string>
+
+    <string name="button">Click Button</string>
+    <string name="title">Log Out</string>
+    <string name="dialogMsg">Do you want to Logout ? </string>
+    <string name="news">News</string>
+    <string name="pick_trash">Pick Trash</string>
+    <string name="premium">Premium</string>
+    <string name="maps">Maps</string>
+    <string name="shop">Shop</string>
+    <string name="redeem">Redeem</string>
+    <string name="schedule">Schedule</string>
+    <string name="market">Market</string>
+    <string name="message">Message</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="find_recycraft">Find Recycraft</string>
+    <string name="maps_recycraft">Maps\nRecycraft</string>
+    <string name="go_to_destination">Go to Destination</string>
+    <string name="order_now">Order Now</string>
 </resources>

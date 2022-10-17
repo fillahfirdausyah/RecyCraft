@@ -6,7 +6,7 @@ import com.amikomsd.recycraft.R
 import com.amikomsd.recycraft.databinding.ActivityMainBinding
 import com.amikomsd.recycraft.ui.fragment.HomeFragment
 import com.amikomsd.recycraft.ui.fragment.MarketFragment
-import com.amikomsd.recycraft.ui.fragment.ProfileFragment
+import com.amikomsd.recycraft.ui.fragment.MessageFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,10 +33,10 @@ class MainActivity : AppCompatActivity() {
                     MarketFragment()
                 ).commit()
                 return@setOnItemReselectedListener true
-            } R.id.nav_profile ->{
+            } R.id.nav_message ->{
                 supportFragmentManager.beginTransaction().replace(
                     R.id.fragmentContainerView,
-                    ProfileFragment()
+                    MessageFragment()
                 ).commit()
                 return@setOnItemReselectedListener true
             }

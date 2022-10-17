@@ -6,18 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.amikomsd.recycraft.R
-import com.amikomsd.recycraft.databinding.FragmentProfileBinding
+import com.amikomsd.recycraft.databinding.FragmentMessageBinding
 
-class ProfileFragment : Fragment() {
 
-    lateinit var binding : FragmentProfileBinding
+class MessageFragment : Fragment() {
+
+    lateinit var binding : FragmentMessageBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentProfileBinding.inflate(layoutInflater,container,false)
+        binding = FragmentMessageBinding.inflate(layoutInflater,container,false)
         return binding.root
     }
 }

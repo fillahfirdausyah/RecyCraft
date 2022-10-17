@@ -12,26 +12,12 @@
     <item
         android:id="@+id/nav_shop"
         android:icon="@drawable/ic_baseline_shopping_cart"
-        android:title="Market"
+        android:title="@string/market"
         app:showAsAction="always"/>
 
     <item
-        android:id="@+id/nav_profile"
-        android:icon="@drawable/ic_baseline_person"
-        android:title="Search"
+        android:id="@+id/nav_message"
+        android:icon="@drawable/ic_baseline_message_24"
+        android:title="@string/message"
         app:showAsAction="always"/>
-
-    <item
-        android:title=""
-        android:checkable="false"
-        android:checked="false"
-        app:showAsAction="always"
-        android:enabled="false"/>
-
-    <item
-        android:title=""
-        android:checkable="false"
-        android:checked="false"
-        app:showAsAction="always"
-        android:enabled="false"/>
 </menu>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:text="@string/maps_recycraft"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/dark_late_gray"/>
+
+    <SearchView
+        android:id="@+id/idSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvMaps"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/rounded_bg_set"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search Craft Store" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/idSV"
+        tools:context=".ui.maps.MapsActivity" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_destination"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_bg"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="90dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/find_recycraft"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_late_gray"
+        android:background="@drawable/rounded_bg_set"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_medium"/>
+
+
+
+</RelativeLayout>
