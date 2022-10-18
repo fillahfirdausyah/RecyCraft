@@ -25,6 +25,8 @@ class RegistActivity : AppCompatActivity() {
         binding = ActivityRegistBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.hide()
+
         auth = Firebase.auth
         firestore = Firebase.firestore
 
