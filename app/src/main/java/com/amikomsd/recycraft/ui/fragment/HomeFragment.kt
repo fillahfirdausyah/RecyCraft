@@ -6,11 +6,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.amikomsd.recycraft.ui.auth.LoginActivity
 import com.amikomsd.recycraft.databinding.FragmentHomeBinding
 import com.amikomsd.recycraft.ui.maps.MapsActivity
 import com.amikomsd.recycraft.ui.pick.PickActivity
 import com.amikomsd.recycraft.ui.profile.ProfileActivity
+import com.amikomsd.recycraft.ui.redeem.RedeemActivity
 
 
 class HomeFragment : Fragment() {
@@ -41,6 +41,10 @@ class HomeFragment : Fragment() {
         binding.lyPickTrash.setOnClickListener {
             val toPick = Intent(context,PickActivity::class.java)
             startActivity(toPick)
+        }
+        binding.lyReedem.setOnClickListener {
+            val toReedem = Intent(context, RedeemActivity::class.java)
+            startActivity(toReedem)
         }
     }
 

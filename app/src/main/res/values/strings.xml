@@ -44,4 +44,8 @@
     <string name="maps_recycraft">Maps\nRecycraft</string>
     <string name="go_to_destination">Go to Destination</string>
     <string name="order_now">Order Now</string>
+    <string name="reedem">Reedem</string>
+    <string name="title_item">Title</string>
+    <string name="coin">Coin</string>
+    <string name="desc">Desc</string>
 </resources>

@@ -27,6 +27,13 @@
         android:theme="@style/Theme.RecyCraft"
         tools:targetApi="31">
         <activity
+            android:name=".ui.redeem.RedeemActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ui.pick.PickActivity"
             android:exported="false">
             <meta-data

@@ -285,13 +285,13 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/lyReedem"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:background="@drawable/rounded_bg_second"
             android:gravity="center"
             android:orientation="vertical">
-
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="60dp"
