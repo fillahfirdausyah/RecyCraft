@@ -20,6 +20,8 @@ class HomeBottomNavigation : AppCompatActivity() {
         binding = ActivityHomeBottomNavigationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.hide()
+
         val navView: BottomNavigationView = binding.navView
 
         val navController =
