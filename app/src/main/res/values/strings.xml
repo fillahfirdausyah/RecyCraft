@@ -26,4 +26,9 @@
     <string name="profile">Profile</string>
     <string name="info">Info</string>
     <string name="logout">Logout</string>
+    <string name="title_activity_home_bottom_navigation">HomeBottomNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="user_profile">userProfile</string>
 </resources>
