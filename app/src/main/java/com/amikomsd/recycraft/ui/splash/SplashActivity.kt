@@ -9,15 +9,17 @@ import com.amikomsd.recycraft.databinding.ActivitySplashBinding
 import com.amikomsd.recycraft.ui.auth.LoginActivity
 
 class SplashActivity : AppCompatActivity() {
-    lateinit var binding : ActivitySplashBinding
+    lateinit var binding: ActivitySplashBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashBinding.inflate(layoutInflater)
 
+        supportActionBar?.hide()
+
         Handler(Looper.myLooper()!!).postDelayed({
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
-        },3000)
+        }, 3000)
         setContentView(binding.root)
     }
 }
