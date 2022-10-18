@@ -18,9 +18,8 @@
     <string name="username">Username</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="welcome">Welcome</string>
-    <string name="idr">IDR.</string>
-    <string name="_10000000">1000000</string>
-    <string name="top_up">TOP UP</string>
+    <string name="account_balance">Rp. %s1</string>
+    <string name="top_up">Top Up</string>
     <string name="home">Home</string>
     <string name="account">Account</string>
     <string name="profile">Profile</string>
@@ -31,4 +30,21 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="user_profile">userProfile</string>
+
+    <!--  Content Description  -->
+    <string name="ic_wallet">ic_wallet</string>
+    <string name="ic_add">ic_add</string>
+    <string name="ic_shop_bag">ic_shop_bag</string>
+    <string name="ic_trash">ic_trash</string>
+    <string name="ic_globe">ic_globe</string>
+    <string name="ic_present">ic_present</string>
+
+    <!--  Menu Title  -->
+    <string name="menu_title_trash_market">Recycling Trash Market</string>
+    <string name="menu_title_shop">Hand Craft \nShop</string>
+    <string name="menu_title_craftsman_location">Craftsman Location</string>
+    <string name="menu_title_reedem_point">Reedem Point</string>
+    <string name="product_handcraft">Product Handcraft</string>
+    <string name="see_more">See More</string>
+
 </resources>
