@@ -10,8 +10,8 @@ import com.amikomsd.recycraft.R
 import com.amikomsd.recycraft.adapters.RedeemAdapter
 import com.amikomsd.recycraft.data.Redeem
 import com.amikomsd.recycraft.databinding.ActivityRedeemBinding
+import com.amikomsd.recycraft.ui.HomeBottomNavigation
 import com.amikomsd.recycraft.ui.MainActivity
-import com.amikomsd.recycraft.ui.fragment.HomeFragment
 
 class RedeemActivity : AppCompatActivity() {
 
@@ -25,11 +25,11 @@ class RedeemActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.ivBack.setOnClickListener {
-            val toHome = Intent(this, MainActivity::class.java)
+            val toHome = Intent(this, HomeBottomNavigation::class.java)
             startActivity(toHome)
         }
 
-        var listRedeem = arrayListOf(
+        val listRedeem = arrayListOf(
             Redeem(R.drawable.ic_picture_empty,"Sancken","Minyak goreng sehat sanken dan ramah lingkungan",20),
             Redeem(R.drawable.ic_picture_empty,"Beras Rojo Lele 25 KG","Beras rojo lele asli jawa timur",100),
             Redeem(R.drawable.ic_picture_empty,"Mie Instant","Indomie Goreng Satu dus",40),
