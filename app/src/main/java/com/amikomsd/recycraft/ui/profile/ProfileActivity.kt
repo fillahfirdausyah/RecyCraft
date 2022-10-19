@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.Toast
 import com.amikomsd.recycraft.R
 import com.amikomsd.recycraft.databinding.ActivityProfileBinding
+import com.amikomsd.recycraft.ui.HomeBottomNavigation
 import com.amikomsd.recycraft.ui.MainActivity
 import com.amikomsd.recycraft.ui.auth.LoginActivity
 
@@ -26,7 +27,7 @@ class ProfileActivity : AppCompatActivity() {
         }
 
         binding.ivBack.setOnClickListener {
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this,HomeBottomNavigation::class.java)
             startActivity(intent)
         }
     }

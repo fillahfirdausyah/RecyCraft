@@ -65,7 +65,7 @@
         <activity
             android:name=".ui.maps.MapsActivity"
             android:exported="true"
-            android:label="@string/title_activity_maps" />
+            android:label="Activity Maps" />
         <activity
             android:name=".ui.HomeBottomNavigation"
             android:exported="false"

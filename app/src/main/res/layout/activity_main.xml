@@ -42,7 +42,7 @@
             android:paddingStart="20dp"
             app:itemIconTint="@color/bottom_bar_item_selector"
             app:itemTextColor="@color/white"
-            app:menu="@menu/bottom_menu"
+            app:menu="@menu/bottom_nav_menu"
             tools:ignore="RtlSymmetry" />
     </FrameLayout>
 
