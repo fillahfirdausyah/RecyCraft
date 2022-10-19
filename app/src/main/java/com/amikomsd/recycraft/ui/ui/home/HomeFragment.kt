@@ -47,20 +47,20 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         setupStatusBar()
 
-        binding.ivProfile.setOnClickListener {
-            val toProfile = Intent(requireActivity(),ProfileActivity::class.java)
+        binding.ivToProfile.setOnClickListener {
+            val toProfile = Intent(requireActivity(), ProfileActivity::class.java)
             startActivity(toProfile)
         }
         binding.lyTrashMarket.setOnClickListener {
-            val toMaps = Intent(requireActivity(),MapsActivity::class.java)
+            val toMaps = Intent(requireActivity(), MapsActivity::class.java)
             startActivity(toMaps)
         }
         binding.lyCraftLocation.setOnClickListener {
-            val toPick = Intent(requireActivity(),PickActivity::class.java)
+            val toPick = Intent(requireActivity(), PickActivity::class.java)
             startActivity(toPick)
         }
         binding.lyReddem.setOnClickListener {
-            val toRedeem = Intent(requireActivity(),RedeemActivity::class.java)
+            val toRedeem = Intent(requireActivity(), RedeemActivity::class.java)
             startActivity(toRedeem)
         }
 
