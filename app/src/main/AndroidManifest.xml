@@ -67,6 +67,10 @@
             android:exported="true"
             android:label="@string/title_activity_maps" />
         <activity
+            android:name=".ui.HomeBottomNavigation"
+            android:exported="false"
+            android:label="@string/title_activity_home_bottom_navigation" />
+        <activity
             android:name=".ui.auth.RegistActivity"
             android:exported="false">
             <meta-data
@@ -93,9 +97,14 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
             android:name=".ui.MainActivity"
             android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
