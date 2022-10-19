@@ -4,6 +4,7 @@ import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
+import android.provider.ContactsContract.Profile
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -41,47 +42,23 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         setupStatusBar()
 
-<<<<<<< Updated upstream
-        binding.ivProfile.setOnClickListener {
-            val toProfile = Intent(requireActivity(), ProfileActivity::class.java)
-            startActivity(toProfile)
-        }
-        binding.lyRedeem.setOnClickListener {
-            val toRedeem = Intent(requireActivity(),RedeemActivity::class.java)
-            startActivity(toRedeem)
-        }
-        binding.lyLocation.setOnClickListener {
-            val toMap = Intent(requireActivity(),PickActivity::class.java)
-            startActivity(toMap)
-        }
-        binding.lyTrashMarket.setOnClickListener {
-            val toMarket = Intent(requireActivity(),MapsActivity::class.java)
-            startActivity(toMarket)
-
-        }
-=======
-        binding.lyReedem.setOnClickListener {
-            val toRedeem = Intent(context,RedeemActivity::class.java)
-            startActivity(toRedeem)
-        }
-
-        binding.lyTrashMarket.setOnClickListener {
-            val toPick = Intent(requireActivity(),PickActivity::class.java)
-            startActivity(toPick)
-        }
-
-        binding.lyCraftLocation.setOnClickListener {
-            val toMap = Intent(requireActivity(),MapsActivity::class.java)
-            startActivity(toMap)
-        }
-
-
         binding.ivProfile.setOnClickListener {
             val toProfile = Intent(requireActivity(),ProfileActivity::class.java)
             startActivity(toProfile)
         }
+        binding.lyTrashMarket.setOnClickListener {
+            val toMaps = Intent(requireActivity(),MapsActivity::class.java)
+            startActivity(toMaps)
+        }
+        binding.lyCraftLocation.setOnClickListener {
+            val toPick = Intent(requireActivity(),PickActivity::class.java)
+            startActivity(toPick)
+        }
+        binding.lyReddem.setOnClickListener {
+            val toRedeem = Intent(requireActivity(),RedeemActivity::class.java)
+            startActivity(toRedeem)
+        }
 
->>>>>>> Stashed changes
     }
 
     private fun setupStatusBar() {
