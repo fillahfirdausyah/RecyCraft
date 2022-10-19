@@ -23,10 +23,10 @@ class ListTrashAvailableAdapter(private val listTrashAvailable: List<TrashAvaila
         val lastIndex = listTrashAvailable.size - 1
         if (position == 0) {
             holder.binding.root.setMargin(left = 50, right = 25)
-        }
-
-        if (position == lastIndex) {
+        } else if (position == lastIndex) {
             holder.binding.root.setMargin(left = 25, right = 50)
+        } else {
+            holder.binding.root.setMargin(left = 8, right = 8)
         }
 
         holder.binding.ivTrashAvailable.setImageResource(listTrashAvailable[position].image)

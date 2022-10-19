@@ -5,16 +5,32 @@
       <map>
         <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/drawable-v24/rounded_bg_second.xml" value="0.171" />
         <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/drawable-v24/rounded_bg_set.xml" value="0.171" />
+        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/drawable/ic_baseline_home.xml" value="0.171" />
+        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.171" />
+        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/drawable/ic_shopping_bag_cyan_mate.xml" value="0.171" />
         <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/drawable/ic_user_profile_icon.xml" value="0.171" />
+        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/drawable/rounded_bg_balance_info.xml" value="0.171" />
         <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/drawable/rounded_bg_search_action_bar.xml" value="0.171" />
+        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/drawable/rounded_product_image.xml" value="0.171" />
         <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/action_bar_search.xml" value="0.22" />
-        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/activity_home_bottom_navigation.xml" value="0.2" />
+        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/activity_home_bottom_navigation.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/activity_regist.xml" value="0.1" />
+        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/activity_maps.xml" value="0.2" />
+        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/activity_pick.xml" value="0.2" />
+        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/activity_redeem.xml" value="0.2" />
+        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/activity_regist.xml" value="0.12" />
+        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/activity_splash.xml" value="0.2" />
         <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/fragment_dashboard.xml" value="0.2" />
-        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/fragment_market.xml" value="0.2" />
+        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/fragment_message.xml" value="0.2" />
+        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/fragment_notifications.xml" value="0.2" />
         <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
+        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/fragment_settings.xml" value="0.2" />
+        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/item_product_recomendation.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/item_redeem.xml" value="0.2" />
+        <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/item_trash_available.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/layout/loading_screen.xml" value="0.2" />
         <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/menu/bottom_menu.xml" value="0.2" />
         <entry key="..\:/Users/filla/Documents/Amikom/Gemastik/RecyCraft/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
