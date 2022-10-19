@@ -18,6 +18,7 @@
     <color name="silver">#a8b7c1</color>
     <color name="light_gray">#c0ccd3</color>
     <color name="light_gray_200">#EDEDED</color>
+    <color name="gray_500">#7C7C7C</color>
     <color name="dark_late_gray">#424450</color>
 
     <color name="cyan_dark">#4AB4DE</color>
