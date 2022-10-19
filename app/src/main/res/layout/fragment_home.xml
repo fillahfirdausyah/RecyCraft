@@ -41,12 +41,12 @@
                 android:textColorHint="@color/light_gray"
                 android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/imageView"
+                app:layout_constraintEnd_toStartOf="@+id/ivProfile"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/ivProfile"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 app:layout_constraintBottom_toBottomOf="@+id/cobaSearch"
@@ -168,6 +168,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/lyTrashMarket"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -190,6 +191,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/lyLocation"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -212,6 +214,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/lyRedeem"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

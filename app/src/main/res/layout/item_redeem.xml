@@ -9,6 +9,7 @@
     app:cardCornerRadius="10dp">
 
     <RelativeLayout
+        android:background="@drawable/rounded_bg_set"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -37,26 +38,44 @@
 
                 <TextView
                     android:id="@+id/TitleRedeem"
-                    android:textSize="25sp"
+                    android:textSize="20sp"
                     android:textColor="@color/dark_late_gray"
                     android:fontFamily="@font/poppins_semibold"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/title_item" />
+                    android:text="Title" />
 
-                <TextView
-                    android:id="@+id/CoinRedeem"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="top"
-                    android:layout_marginEnd="16dp"
-                    android:textColor="@color/PremiereColor"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:layout_weight="3"
-                    android:text="@string/coin"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/CoinRedeem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_weight="3"
+                        android:text="20"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginEnd="16dp"
+                        android:textColor="@color/PremiereColor"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_weight="3"
+                        android:text="Coin"/>
+
+                </LinearLayout>
             </LinearLayout>
 
             <TextView
@@ -64,7 +83,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="@string/desc"
+                android:text="Desc"
                 android:fontFamily="@font/poppins_light"
                 android:textSize="20sp"
                 android:textColor="@color/black" />
