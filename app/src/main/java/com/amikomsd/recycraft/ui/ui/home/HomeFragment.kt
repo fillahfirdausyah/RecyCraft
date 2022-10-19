@@ -41,6 +41,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         setupStatusBar()
 
+<<<<<<< Updated upstream
         binding.ivProfile.setOnClickListener {
             val toProfile = Intent(requireActivity(), ProfileActivity::class.java)
             startActivity(toProfile)
@@ -58,6 +59,29 @@ class HomeFragment : Fragment() {
             startActivity(toMarket)
 
         }
+=======
+        binding.lyReedem.setOnClickListener {
+            val toRedeem = Intent(context,RedeemActivity::class.java)
+            startActivity(toRedeem)
+        }
+
+        binding.lyTrashMarket.setOnClickListener {
+            val toPick = Intent(requireActivity(),PickActivity::class.java)
+            startActivity(toPick)
+        }
+
+        binding.lyCraftLocation.setOnClickListener {
+            val toMap = Intent(requireActivity(),MapsActivity::class.java)
+            startActivity(toMap)
+        }
+
+
+        binding.ivProfile.setOnClickListener {
+            val toProfile = Intent(requireActivity(),ProfileActivity::class.java)
+            startActivity(toProfile)
+        }
+
+>>>>>>> Stashed changes
     }
 
     private fun setupStatusBar() {

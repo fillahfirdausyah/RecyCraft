@@ -191,7 +191,11 @@
         </LinearLayout>
 
         <LinearLayout
+<<<<<<< Updated upstream
             android:id="@+id/lyLocation"
+=======
+            android:id="@+id/lyCraftLocation"
+>>>>>>> Stashed changes
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -214,7 +218,11 @@
         </LinearLayout>
 
         <LinearLayout
+<<<<<<< Updated upstream
             android:id="@+id/lyRedeem"
+=======
+            android:id="@+id/lyReedem"
+>>>>>>> Stashed changes
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

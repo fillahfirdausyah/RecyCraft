@@ -24,7 +24,11 @@
         android:layout_centerHorizontal="true"
         android:textSize="30sp"
         android:textAlignment="center"
+<<<<<<< Updated upstream
         android:text="Maps\nRecycraft"
+=======
+        android:text="Maps\nRecyCraft"
+>>>>>>> Stashed changes
         android:fontFamily="@font/poppins_semibold"
         android:textColor="@color/dark_late_gray"/>
 
