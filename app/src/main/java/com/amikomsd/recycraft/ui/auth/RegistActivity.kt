@@ -2,9 +2,13 @@ package com.amikomsd.recycraft.ui.auth
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
+import com.amikomsd.recycraft.data.User
 import com.amikomsd.recycraft.databinding.ActivityRegistBinding
+import com.amikomsd.recycraft.ui.HomeBottomNavigation
 import com.amikomsd.recycraft.ui.MainActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -33,8 +37,7 @@ class RegistActivity : AppCompatActivity() {
         formValidation()
 
         binding.btnRegist.setOnClickListener {
-//            val intent = Intent(this, LoginActivity::class.java)
-//            startActivity(intent)
+            binding.registerLoadingScreen.root.visibility = View.VISIBLE
             registerAction()
         }
         binding.tvLogin.setOnClickListener {
@@ -72,7 +75,7 @@ class RegistActivity : AppCompatActivity() {
         val password = binding.etPassword.text.toString()
 
 
-//        val user = User(fullName, email)
+        val user = User(fullName, email)
 
         /**
          * Create user action using Firebase Auth
@@ -81,12 +84,17 @@ class RegistActivity : AppCompatActivity() {
          */
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener { task ->
             if (task.isSuccessful) {
+                binding.registerLoadingScreen.root.visibility = View.GONE
                 val currentUser = auth.currentUser
                 val profile = userProfileChangeRequest {
                     displayName = fullName
                 }
                 currentUser!!.updateProfile(profile)
+                firestore.collection("Users").document(fullName).set(user)
                 updateUI(currentUser)
+            } else {
+                binding.registerLoadingScreen.root.visibility = View.GONE
+                Toast.makeText(this, task.exception?.message, Toast.LENGTH_LONG).show()
             }
         }
 
@@ -98,7 +106,7 @@ class RegistActivity : AppCompatActivity() {
      */
     private fun updateUI(currentUser: FirebaseUser) {
         if (currentUser != null) {
-            val intent = Intent(this@RegistActivity, MainActivity::class.java)
+            val intent = Intent(this@RegistActivity, HomeBottomNavigation::class.java)
             startActivity(intent)
             finish()
         }
