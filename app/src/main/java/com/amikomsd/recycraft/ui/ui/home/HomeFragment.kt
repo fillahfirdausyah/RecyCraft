@@ -8,7 +8,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.amikomsd.recycraft.R
+import com.amikomsd.recycraft.adapters.ListProductRecomendationAdapter
+import com.amikomsd.recycraft.adapters.ListTrashAvailable
+import com.amikomsd.recycraft.data.ProductRecomendation
+import com.amikomsd.recycraft.data.TrashAvailable
 import com.amikomsd.recycraft.databinding.FragmentHomeBinding
 
 
@@ -35,6 +40,63 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupStatusBar()
+
+
+        mockDataProductRecomendation()
+        mockDataTrashAvailable()
+
+    }
+
+    private fun mockDataTrashAvailable() {
+        val listTrashAvailable = arrayListOf<TrashAvailable>(
+            TrashAvailable(
+                R.drawable.sampah_plastik,
+                "Botol Plastik",
+                "Rp20.000", "2 Kresek",
+                "Barry Allen"
+            ),
+            TrashAvailable(
+                R.drawable.sampah_plastik,
+                "Botol Kaca",
+                "Rp25.000", "1 Dus",
+                "Harison Wels"
+            ),
+            TrashAvailable(
+                R.drawable.sampah_plastik,
+                "Kardus",
+                "Rp10.000", "5 Kardus",
+                "Cisco Ramon"
+            ),
+            TrashAvailable(
+                R.drawable.sampah_plastik,
+                "Baju Bekas",
+                "Rp40.000", "2 Kantong",
+                "Iris West"
+            ),
+            TrashAvailable(
+                R.drawable.sampah_plastik,
+                "Dus Mie Instan",
+                "Rp10.000", "5 Dus",
+                "Caitlin Snow"
+            ),
+        )
+
+        binding.rvListTrashAvailable.layoutManager =
+            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        binding.rvListTrashAvailable.adapter = ListTrashAvailable(listTrashAvailable)
+    }
+
+    private fun mockDataProductRecomendation() {
+        val listProductRecomendation = arrayListOf<ProductRecomendation>(
+            ProductRecomendation(R.drawable.product1, "Product 1", "Rp19.000"),
+            ProductRecomendation(R.drawable.product1, "Product 2", "Rp16.000"),
+            ProductRecomendation(R.drawable.product1, "Product 3", "Rp11.000"),
+        )
+
+        binding.rvListProductRecomendation.layoutManager =
+            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        binding.rvListProductRecomendation.adapter =
+            ListProductRecomendationAdapter(listProductRecomendation)
     }
 
     private fun setupStatusBar() {
