@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardMovie"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="16dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgItem"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgItem"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TitleRedeem"
+                    android:textSize="25sp"
+                    android:textColor="@color/dark_late_gray"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/title_item" />
+
+                <TextView
+                    android:id="@+id/CoinRedeem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginEnd="16dp"
+                    android:textColor="@color/PremiereColor"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_weight="3"
+                    android:text="@string/coin"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/descReedem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/desc"
+                android:fontFamily="@font/poppins_light"
+                android:textSize="20sp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

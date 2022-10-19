@@ -46,17 +46,4 @@
             tools:ignore="RtlSymmetry" />
     </FrameLayout>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        style="@style/Widget.MaterialComponents.FloatingActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/silver"
-        android:elevation="20dp"
-        android:src="@drawable/ic_baseline_add_24"
-        app:borderWidth="0dp"
-        app:elevation="20dp"
-        app:layout_anchor="@id/bottom_app_bar"
-        tools:ignore="ContentDescription" />
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
