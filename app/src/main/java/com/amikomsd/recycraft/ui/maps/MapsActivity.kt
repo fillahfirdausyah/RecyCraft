@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.amikomsd.recycraft.R
 import com.amikomsd.recycraft.databinding.ActivityMapsBinding
+import com.amikomsd.recycraft.ui.HomeBottomNavigation
 import com.amikomsd.recycraft.ui.MainActivity
 
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -31,7 +32,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mapFragment.getMapAsync(this)
 
         binding.ivBack.setOnClickListener {
-            val toHome = Intent(this,MainActivity::class.java)
+            val toHome = Intent(this,HomeBottomNavigation::class.java)
             startActivity(toHome)
         }
     }

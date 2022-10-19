@@ -24,7 +24,7 @@
         android:layout_centerHorizontal="true"
         android:textSize="30sp"
         android:textAlignment="center"
-        android:text="@string/maps_recycraft"
+        android:text="Maps\nRecycraft"
         android:fontFamily="@font/poppins_semibold"
         android:textColor="@color/dark_late_gray"/>
 
@@ -52,7 +52,7 @@
         android:id="@+id/btnDestination"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/go_to_destination"
+        android:text="@string/start"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:background="@drawable/rounded_bg"
