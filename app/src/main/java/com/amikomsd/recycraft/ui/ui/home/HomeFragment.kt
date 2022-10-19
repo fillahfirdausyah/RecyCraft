@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.amikomsd.recycraft.R
 import com.amikomsd.recycraft.adapters.ListProductRecomendationAdapter
-import com.amikomsd.recycraft.adapters.ListTrashAvailable
+import com.amikomsd.recycraft.adapters.ListTrashAvailableAdapter
 import com.amikomsd.recycraft.data.ProductRecomendation
 import com.amikomsd.recycraft.data.TrashAvailable
 import com.amikomsd.recycraft.databinding.FragmentHomeBinding
@@ -83,7 +83,7 @@ class HomeFragment : Fragment() {
 
         binding.rvListTrashAvailable.layoutManager =
             LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
-        binding.rvListTrashAvailable.adapter = ListTrashAvailable(listTrashAvailable)
+        binding.rvListTrashAvailable.adapter = ListTrashAvailableAdapter(listTrashAvailable)
     }
 
     private fun mockDataProductRecomendation() {
