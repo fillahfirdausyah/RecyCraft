@@ -24,10 +24,11 @@
         android:layout_marginVertical="20dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Redeem\nYour Trash"
+        android:text="Redeem"
         android:textAlignment="center"
         android:textColor="@color/dark_late_gray"
         android:textSize="30sp"
+        android:layout_marginStart="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.352"
         app:layout_constraintStart_toEndOf="@+id/ivBack"
@@ -37,6 +38,7 @@
         android:id="@+id/ivDetil"
         android:layout_width="match_parent"
         android:layout_height="300dp"
+        android:layout_marginVertical="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:src="@drawable/dummy_bimoli"
@@ -93,6 +95,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_semibold"
                 android:text="Coin"
+                app:fontFamily="@font/poppins_semibold"
                 android:layout_marginStart="10dp"
                 android:textSize="20sp" />
 
