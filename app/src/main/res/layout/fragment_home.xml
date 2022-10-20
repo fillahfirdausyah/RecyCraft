@@ -156,7 +156,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
                 <LinearLayout
-                    android:id="@+id/lyTrashMarket"
+                    android:id="@+id/lyMarketPlace"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -179,7 +179,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/lyCraftLocation"
+                    android:id="@+id/lyTrashMarket"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -202,6 +202,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/lyCraftsmanLocation"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
