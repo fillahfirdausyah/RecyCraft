@@ -25,8 +25,6 @@ class SplashActivity : AppCompatActivity() {
 
         val currentUser = auth.currentUser
 
-
-
         Handler(Looper.myLooper()!!).postDelayed({
             if (currentUser != null) {
                 val intent = Intent(this@SplashActivity, HomeBottomNavigation::class.java)

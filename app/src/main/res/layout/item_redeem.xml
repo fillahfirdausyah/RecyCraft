@@ -9,6 +9,7 @@
     app:cardCornerRadius="10dp">
 
     <RelativeLayout
+        android:id="@+id/itemDetils"
         android:background="@drawable/rounded_bg_set"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -58,6 +59,7 @@
                         android:layout_gravity="top"
                         android:layout_marginEnd="16dp"
                         android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/PremiereColor"
                         android:textStyle="bold"
                         android:textSize="20sp"
                         android:layout_weight="3"
@@ -68,7 +70,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="top"
                         android:layout_marginEnd="16dp"
-                        android:textColor="@color/PremiereColor"
                         android:fontFamily="@font/poppins_semibold"
                         android:textStyle="bold"
                         android:textSize="20sp"

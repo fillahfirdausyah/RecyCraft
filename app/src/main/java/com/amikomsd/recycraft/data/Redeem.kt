@@ -5,4 +5,4 @@ data class  Redeem (
     var title: String,
     var desc: String,
     var coin: Int,
-)
+):java.io.Serializable
