@@ -25,33 +25,26 @@ class DashboardFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val dashboardViewModel =
-            ViewModelProvider(this).get(DashboardViewModel::class.java)
 
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
-        val textView: TextView = binding.textDashboard
-        dashboardViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
         return root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setupStatusBar()
+//        setupStatusBar()
     }
 
-    private fun setupStatusBar() {
-        activity?.window?.apply {
-            addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-            clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-            statusBarColor = Color.TRANSPARENT
-            decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
-        }
-        activity?.actionBar?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-    }
+//    private fun setupStatusBar() {
+//        activity?.window?.apply {
+//            addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+//            clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+//            statusBarColor = Color.TRANSPARENT
+//            decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+//        }
+//        activity?.actionBar?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+//    }
 
     override fun onDestroyView() {
         super.onDestroyView()

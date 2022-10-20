@@ -27,7 +27,7 @@
     <string name="logout">Logout</string>
     <string name="title_activity_home_bottom_navigation">HomeBottomNavigation</string>
     <string name="title_home">Home</string>
-    <string name="title_your_store">Your Store</string>
+    <string name="title_my_store">My Store</string>
     <string name="title_notifications">Notifications</string>
     <string name="user_profile">userProfile</string>
     <string name="title_activity_maps">Maps Activity</string>

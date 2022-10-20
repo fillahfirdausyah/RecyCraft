@@ -4,7 +4,6 @@ import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
-import android.provider.ContactsContract.Profile
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,6 +16,7 @@ import com.amikomsd.recycraft.adapters.ListTrashAvailableAdapter
 import com.amikomsd.recycraft.data.ProductRecomendation
 import com.amikomsd.recycraft.data.TrashAvailable
 import com.amikomsd.recycraft.databinding.FragmentHomeBinding
+import com.amikomsd.recycraft.ui.marketPlace.MarketPlaceActivity
 import com.amikomsd.recycraft.ui.maps.MapsActivity
 import com.amikomsd.recycraft.ui.pick.PickActivity
 import com.amikomsd.recycraft.ui.profile.ProfileActivity
@@ -51,11 +51,15 @@ class HomeFragment : Fragment() {
             val toProfile = Intent(requireActivity(), ProfileActivity::class.java)
             startActivity(toProfile)
         }
+        binding.lyMarketPlace.setOnClickListener {
+            val intent = Intent(requireContext(), MarketPlaceActivity::class.java)
+            startActivity(intent)
+        }
         binding.lyTrashMarket.setOnClickListener {
             val toMaps = Intent(requireActivity(), MapsActivity::class.java)
             startActivity(toMaps)
         }
-        binding.lyCraftLocation.setOnClickListener {
+        binding.lyCraftsmanLocation.setOnClickListener {
             val toPick = Intent(requireActivity(), PickActivity::class.java)
             startActivity(toPick)
         }
