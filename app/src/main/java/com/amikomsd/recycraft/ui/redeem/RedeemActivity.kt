@@ -45,7 +45,10 @@ class RedeemActivity : AppCompatActivity() {
                 "Beras rojo lele asli jawa timur",
                 20
             ),
-            Redeem(R.drawable.dummy_mie, "Mie Instant", "Indomie Goreng Satu dus", 20),
+            Redeem(R.drawable.dummy_mie,
+                "Mie Instant",
+                "Indomie Goreng Satu dus",
+                20),
         )
 
 

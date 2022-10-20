@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import com.amikomsd.recycraft.R
 import com.amikomsd.recycraft.databinding.ActivityProfileBinding
 import com.amikomsd.recycraft.ui.HomeBottomNavigation
@@ -19,6 +20,8 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        supportActionBar?.hide()
 
         binding.tvUserName.text = intent.getStringExtra("nama")
 
