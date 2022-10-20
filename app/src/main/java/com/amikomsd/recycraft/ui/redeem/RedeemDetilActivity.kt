@@ -12,7 +12,6 @@ import com.bumptech.glide.Glide
 class RedeemDetilActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityRedeemDetilBinding
-    var angka = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,29 +27,6 @@ class RedeemDetilActivity : AppCompatActivity() {
             startActivity(toRedeem)
         }
 
-        binding.ivIncrement.setOnClickListener {
-            increment()
-        }
-        binding.ivDecrement.setOnClickListener {
-            decrement()
-        }
-
-    }
-
-    fun increment() {
-        angka++
-        var strAngka = angka.toString()
-        binding.tvResult.text = strAngka
-    }
-
-    fun decrement() {
-        if (angka > 0) {
-            angka--
-            var strAngka = angka.toString()
-            binding.tvResult.text = strAngka
-        } else {
-            Toast.makeText(this, "Can't Negative", Toast.LENGTH_SHORT).show()
-        }
     }
 
     fun getIntentExtra() {

@@ -59,5 +59,10 @@
     <string name="find_recycraft">Find Recycraft</string>
     <string name="order_now">Order Now</string>
     <string name="redeem">Redeem</string>
+    <string name="address">Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="coin">Coin</string>
+    <string name="you_need_to_fill_it">You need to fill it</string>
+    <string name="item_redeem">Item Redeem</string>
 
 </resources>
