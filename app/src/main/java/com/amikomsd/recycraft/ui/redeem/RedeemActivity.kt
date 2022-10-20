@@ -16,13 +16,15 @@ import com.amikomsd.recycraft.ui.MainActivity
 
 class RedeemActivity : AppCompatActivity() {
 
-    lateinit var binding : ActivityRedeemBinding
+    lateinit var binding: ActivityRedeemBinding
     private lateinit var redeemAdapter: RedeemAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRedeemBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        supportActionBar?.hide()
 
 
         binding.ivBack.setOnClickListener {
@@ -31,14 +33,25 @@ class RedeemActivity : AppCompatActivity() {
         }
 
         val listRedeem = arrayListOf(
-            Redeem(R.drawable.dummy_bimoli,"Bimoli","Minyak goreng sehat sanken dan ramah lingkungan",20),
-            Redeem(R.drawable.dummy_beras,"Beras Rojo Lele 25 KG","Beras rojo lele asli jawa timur",20),
-            Redeem(R.drawable.dummy_mie,"Mie Instant","Indomie Goreng Satu dus",20),
+            Redeem(
+                R.drawable.dummy_bimoli,
+                "Bimoli",
+                "Minyak goreng sehat sanken dan ramah lingkungan",
+                20
+            ),
+            Redeem(
+                R.drawable.dummy_beras,
+                "Beras Rojo Lele 25 KG",
+                "Beras rojo lele asli jawa timur",
+                20
+            ),
+            Redeem(R.drawable.dummy_mie, "Mie Instant", "Indomie Goreng Satu dus", 20),
         )
 
 
         binding.rvReedem.adapter = RedeemAdapter(listRedeem)
-        binding.rvReedem.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
+        binding.rvReedem.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
-   }
+    }
 }

@@ -14,7 +14,8 @@ import com.amikomsd.recycraft.ui.redeem.RedeemActivity
 import com.amikomsd.recycraft.ui.redeem.RedeemDetilActivity
 import kotlin.math.sign
 
-class RedeemAdapter(var listReedem : ArrayList<Redeem>): RecyclerView.Adapter<RedeemAdapter.ViewHolder>() {
+class RedeemAdapter(var listReedem: ArrayList<Redeem>) :
+    RecyclerView.Adapter<RedeemAdapter.ViewHolder>() {
 
     var onClick: ((Redeem) -> Unit)? = null
     private lateinit var sharedPreferences: SharedPreferences
@@ -37,12 +38,11 @@ class RedeemAdapter(var listReedem : ArrayList<Redeem>): RecyclerView.Adapter<Re
         holder.binding.CoinRedeem.text = listReedem[position].coin.toString()
 
         holder.binding.itemDetils.setOnClickListener {
-            val arg = Bundle()
             val intent = Intent(it.context, RedeemDetilActivity::class.java)
-            arg.putString("image", listReedem[position].image.toString())
-            arg.putString("title",listReedem[position].title)
-            arg.putString("desc",listReedem[position].desc)
-            arg.putString("coin",listReedem[position].coin.toString())
+            intent.putExtra("image", listReedem[position].image)
+            intent.putExtra("title", listReedem[position].title)
+            intent.putExtra("desc", listReedem[position].desc)
+            intent.putExtra("coin", listReedem[position].coin.toString())
             it.context.startActivity(intent)
         }
     }
