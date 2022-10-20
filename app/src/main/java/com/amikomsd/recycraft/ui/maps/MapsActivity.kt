@@ -3,6 +3,7 @@ package com.amikomsd.recycraft.ui.maps
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.ActionBar
 import com.amikomsd.recycraft.R
 import com.amikomsd.recycraft.databinding.ActivityMapsBinding
 import com.amikomsd.recycraft.ui.HomeBottomNavigation
@@ -23,6 +24,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        supportActionBar!!.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
+        supportActionBar!!.setDisplayShowCustomEnabled(true)
+        supportActionBar!!.setCustomView(R.layout.custom_view_maps_action_bar)
+
         binding = ActivityMapsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -31,10 +36,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
 
-        binding.ivBack.setOnClickListener {
-            val toHome = Intent(this,HomeBottomNavigation::class.java)
-            startActivity(toHome)
-        }
+//        binding.ivBack.setOnClickListener {
+//            val toHome = Intent(this,HomeBottomNavigation::class.java)
+//            startActivity(toHome)
+//        }
     }
 
 

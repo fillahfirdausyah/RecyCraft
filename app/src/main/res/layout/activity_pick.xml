@@ -4,60 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_gravity="center"
-    android:padding="20dp">
-
-    <ImageView
-        android:id="@+id/ivBack"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_baseline_arrow_back_24"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:layout_marginTop="?attr/actionBarSize"
+    android:layout_gravity="center">
 
     <TextView
-        android:id="@+id/tvMaps"
+        android:id="@+id/tvtitlemaps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginVertical="30dp"
         android:layout_centerHorizontal="true"
-        android:textSize="30sp"
         android:textAlignment="center"
-        android:layout_marginVertical="10dp"
-        android:text="Order"
         android:fontFamily="@font/poppins_semibold"
-        android:textColor="@color/dark_late_gray"/>
+        android:textColor="@color/dark_late_gray"
+        android:text="Crafts Man"/>
 
-    <SearchView
-        android:id="@+id/idSV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvMaps"
-        android:layout_centerHorizontal="true"
-        android:layout_marginVertical="10dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/rounded_bg_set"
-        android:iconifiedByDefault="false"
-        android:queryHint="Your Location" />
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:layout_below="@id/idSV"
-        tools:context=".ui.pick.PickActivity" />
+        android:layout_marginVertical="10dp"
+        android:layout_below="@+id/tvtitlemaps"
+        android:layout_centerHorizontal="true"
+        tools:context=".ui.maps.MapsActivity" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnDestination"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/order_now"
+        android:text="@string/pick_up"
         android:textAllCaps="false"
         android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/rounded_bg"
         android:textStyle="bold"
         android:layout_alignParentBottom="true"

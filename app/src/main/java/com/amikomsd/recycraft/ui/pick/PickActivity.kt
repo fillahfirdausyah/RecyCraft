@@ -3,6 +3,7 @@ package com.amikomsd.recycraft.ui.pick
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.ActionBar
 import com.amikomsd.recycraft.R
 import com.amikomsd.recycraft.databinding.ActivityPickBinding
 import com.amikomsd.recycraft.ui.HomeBottomNavigation
@@ -24,15 +25,20 @@ class PickActivity : AppCompatActivity(), OnMapReadyCallback {
         binding = ActivityPickBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+        supportActionBar!!.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
+        supportActionBar!!.setDisplayShowCustomEnabled(true)
+        supportActionBar!!.setCustomView(R.layout.custom_view_maps_action_bar)
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
 
-        binding.ivBack.setOnClickListener {
-            val toHome = Intent(this, HomeBottomNavigation::class.java)
-            startActivity(toHome)
-        }
+//        binding.ivBack.setOnClickListener {
+//            val toHome = Intent(this, HomeBottomNavigation::class.java)
+//            startActivity(toHome)
+//        }
     }
 
 
