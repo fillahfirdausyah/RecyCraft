@@ -65,5 +65,7 @@
     <string name="you_need_to_fill_it">You need to fill it</string>
     <string name="item_redeem">Item Redeem</string>
     <string name="pick_up">Pick Up</string>
+    <string name="opsi_pengeriman">Opsi Pengeriman</string>
+    <string name="your_location">Your Location</string>
 
 </resources>
