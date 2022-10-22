@@ -1,3 +1,81 @@
 <resources>
     <string name="app_name">RecyCraft</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recycraft">RecyCraft.</string>
+    <string name="don_t_have_an_account">Don\'t Have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="already_have_an_account">Already Have an account?</string>
+    <string name="full_name">Full Name</string>
+    <string name="username">Username</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="welcome">Welcome</string>
+    <string name="account_balance">Rp. %s1</string>
+    <string name="top_up">Top Up</string>
+    <string name="home">Home</string>
+    <string name="account">Account</string>
+    <string name="profile">Profile</string>
+    <string name="info">Info</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_home_bottom_navigation">HomeBottomNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_my_store">My Store</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="user_profile">userProfile</string>
+    <string name="title_activity_maps">Maps Activity</string>
+
+    <!--  Content Description  -->
+    <string name="ic_wallet">ic_wallet</string>
+    <string name="ic_add">ic_add</string>
+    <string name="ic_shop_bag">ic_shop_bag</string>
+    <string name="ic_trash">ic_trash</string>
+    <string name="ic_globe">ic_globe</string>
+    <string name="ic_present">ic_present</string>
+
+    <!--  Menu Title  -->
+    <string name="menu_title_trash_market">Recycling Trash Market</string>
+    <string name="menu_title_shop">Hand Craft \nShop</string>
+    <string name="menu_title_craftsman_location">Craftsman Location</string>
+    <string name="menu_title_reedem_point">Reedem Point</string>
+    <string name="product_handcraft">Product Handcraft</string>
+    <string name="see_more">See More</string>
+    <string name="market">Market</string>
+    <string name="message">Message</string>
+    <string name="title_settings">Settings</string>
+
+
+    <string name="button">Click Button</string>
+    <string name="title">Logout</string>
+    <string name="dialogMsg">Do you want to Logout ? </string>
+    <string name="start">Start</string>
+    <string name="find_recycraft">Find Recycraft</string>
+    <string name="order_now">Order Now</string>
+    <string name="redeem">Redeem</string>
+    <string name="address">Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="coin">Coin</string>
+    <string name="you_need_to_fill_it">You need to fill it</string>
+    <string name="item_redeem">Item Redeem</string>
+    <string name="pick_up">Pick Up</string>
+    <string name="opsi_pengeriman">Opsi Pengeriman</string>
+    <string name="your_location">Your Location</string>
+    <string name="add_product">Add Product</string>
+    <string name="product_photo">Product Photo</string>
+    <string name="change_photo">Change Photo</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_price">Product Price</string>
+    <string name="made_from">Made From</string>
+    <string name="plastic">Plastic</string>
+    <string name="card_box">Cardbox</string>
+    <string name="glass">Glass</string>
+    <string name="product_value">%1s | %2s Terjual</string>
+
 </resources>
