@@ -1,9 +1,9 @@
 package com.amikomsd.recycraft.ui.marketPlace
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.amikomsd.recycraft.R
 import com.amikomsd.recycraft.adapters.ListRecommendationMarketPlaceAdapter

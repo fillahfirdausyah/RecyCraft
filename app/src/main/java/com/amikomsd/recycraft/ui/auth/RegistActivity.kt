@@ -9,7 +9,6 @@ import androidx.core.widget.addTextChangedListener
 import com.amikomsd.recycraft.data.User
 import com.amikomsd.recycraft.databinding.ActivityRegistBinding
 import com.amikomsd.recycraft.ui.HomeBottomNavigation
-import com.amikomsd.recycraft.ui.MainActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth

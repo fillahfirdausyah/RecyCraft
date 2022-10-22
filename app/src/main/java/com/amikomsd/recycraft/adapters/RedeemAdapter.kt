@@ -2,17 +2,12 @@ package com.amikomsd.recycraft.adapters
 
 import android.content.Intent
 import android.content.SharedPreferences
-import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.RecyclerView
 import com.amikomsd.recycraft.data.Redeem
 import com.amikomsd.recycraft.databinding.ItemRedeemBinding
-import com.amikomsd.recycraft.ui.redeem.RedeemActivity
 import com.amikomsd.recycraft.ui.redeem.RedeemDetilActivity
-import kotlin.math.sign
 
 class RedeemAdapter(var listReedem: ArrayList<Redeem>) :
     RecyclerView.Adapter<RedeemAdapter.ViewHolder>() {

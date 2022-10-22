@@ -16,8 +16,8 @@ import com.amikomsd.recycraft.adapters.ListTrashAvailableAdapter
 import com.amikomsd.recycraft.data.ProductRecomendation
 import com.amikomsd.recycraft.data.TrashAvailable
 import com.amikomsd.recycraft.databinding.FragmentHomeBinding
-import com.amikomsd.recycraft.ui.marketPlace.MarketPlaceActivity
 import com.amikomsd.recycraft.ui.maps.MapsActivity
+import com.amikomsd.recycraft.ui.marketPlace.MarketPlaceActivity
 import com.amikomsd.recycraft.ui.pick.PickActivity
 import com.amikomsd.recycraft.ui.profile.ProfileActivity
 import com.amikomsd.recycraft.ui.redeem.RedeemActivity

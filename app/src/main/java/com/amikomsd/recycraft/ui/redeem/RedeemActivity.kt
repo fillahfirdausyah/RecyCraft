@@ -1,18 +1,14 @@
 package com.amikomsd.recycraft.ui.redeem
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.lifecycle.ViewModelProvider
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.amikomsd.recycraft.R
 import com.amikomsd.recycraft.adapters.RedeemAdapter
 import com.amikomsd.recycraft.data.Redeem
 import com.amikomsd.recycraft.databinding.ActivityRedeemBinding
-import com.amikomsd.recycraft.databinding.ItemRedeemBinding
 import com.amikomsd.recycraft.ui.HomeBottomNavigation
-import com.amikomsd.recycraft.ui.MainActivity
 
 class RedeemActivity : AppCompatActivity() {
 

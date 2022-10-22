@@ -4,23 +4,16 @@ import android.content.Intent
 import android.content.Intent.ACTION_GET_CONTENT
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.net.toUri
 import androidx.core.view.children
 import com.amikomsd.recycraft.data.Product
 import com.amikomsd.recycraft.databinding.ActivityAddProductBinding
 import com.amikomsd.recycraft.utils.uriToFile
 import com.google.android.material.chip.Chip
-import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
-import com.google.firebase.storage.FirebaseStorage
-import com.google.firebase.storage.ktx.storage
 import java.io.File
 
 class AddProductActivity : AppCompatActivity() {

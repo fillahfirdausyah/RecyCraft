@@ -1,14 +1,10 @@
 package com.amikomsd.recycraft.ui.maps
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AppCompatActivity
 import com.amikomsd.recycraft.R
 import com.amikomsd.recycraft.databinding.ActivityMapsBinding
-import com.amikomsd.recycraft.ui.HomeBottomNavigation
-import com.amikomsd.recycraft.ui.MainActivity
-
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback

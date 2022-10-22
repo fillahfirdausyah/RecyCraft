@@ -1,11 +1,9 @@
 package com.amikomsd.recycraft.ui.marketPlace
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.amikomsd.recycraft.data.Product
 import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
 
 class MarketPlaceViewModel : ViewModel() {

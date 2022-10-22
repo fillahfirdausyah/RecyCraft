@@ -2,14 +2,12 @@ package com.amikomsd.recycraft.ui.profile
 
 import android.app.AlertDialog
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AppCompatActivity
 import com.amikomsd.recycraft.R
 import com.amikomsd.recycraft.databinding.ActivityProfileBinding
 import com.amikomsd.recycraft.ui.HomeBottomNavigation
-import com.amikomsd.recycraft.ui.MainActivity
 import com.amikomsd.recycraft.ui.auth.LoginActivity
 
 class ProfileActivity : AppCompatActivity() {

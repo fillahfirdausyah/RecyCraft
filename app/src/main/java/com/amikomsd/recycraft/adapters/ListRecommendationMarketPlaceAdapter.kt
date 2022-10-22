@@ -1,6 +1,5 @@
 package com.amikomsd.recycraft.adapters
 
-import android.util.Log
 import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.ViewGroup
