@@ -67,5 +67,15 @@
     <string name="pick_up">Pick Up</string>
     <string name="opsi_pengeriman">Opsi Pengeriman</string>
     <string name="your_location">Your Location</string>
+    <string name="add_product">Add Product</string>
+    <string name="product_photo">Product Photo</string>
+    <string name="change_photo">Change Photo</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_price">Product Price</string>
+    <string name="made_from">Made From</string>
+    <string name="plastic">Plastic</string>
+    <string name="card_box">Cardbox</string>
+    <string name="glass">Glass</string>
+    <string name="product_value">%1s | %2s Terjual</string>
 
 </resources>

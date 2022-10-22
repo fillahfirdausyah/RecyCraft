@@ -18,7 +18,7 @@
     </style>
 
     <style name="TextSectionSeeMore">
-        <item name="android:textColor">@color/light_green_200</item>
+        <item name="android:textColor">@color/light_green_500</item>
         <item name="android:textSize">14sp</item>
     </style>
 

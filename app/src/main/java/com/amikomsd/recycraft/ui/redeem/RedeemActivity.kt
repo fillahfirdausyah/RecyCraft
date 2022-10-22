@@ -26,7 +26,6 @@ class RedeemActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-
         binding.ivBack.setOnClickListener {
             val toHome = Intent(this, HomeBottomNavigation::class.java)
             startActivity(toHome)

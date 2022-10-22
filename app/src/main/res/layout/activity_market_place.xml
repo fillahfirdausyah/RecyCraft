@@ -91,12 +91,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textView5">
 
-            </androidx.recyclerview.widget.RecyclerView>            <!--  End Plastic Product Section  -->
-            <!--     End Plastic Product       -->
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/tvNoData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="No Data"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView5" />
+            <!--  End Plastic Product Section  -->
+
 
             <!--     Divider    -->
             <View
@@ -107,7 +120,7 @@
                 android:background="@color/grey_divider"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/rvMarketPlacePlasticProduct" />
+                app:layout_constraintTop_toBottomOf="@+id/tvNoData" />
 
             <!--      Cardbox Product Section      -->
             <TextView
@@ -131,6 +144,16 @@
                 app:layout_constraintBottom_toBottomOf="@id/marketPlaceCardboxProductTitle"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/marketPlaceCardboxProductTitle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="No Data"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/marketPlaceCardboxProductTitle" />
             <!--      End Cardbox Product Section  -->
 
         </androidx.constraintlayout.widget.ConstraintLayout>

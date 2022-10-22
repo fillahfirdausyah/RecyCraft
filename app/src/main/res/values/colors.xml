@@ -12,6 +12,7 @@
     <color name="PremiereColor">#008000</color>
     <color name="SecondaryColor">#259625</color>
     <color name="ThirdColor">#54C154</color>
+    <color name="light_green_500">#6BC874</color>
     <color name="light_green_200">#DEFAE1</color>
     <color name="BackgroundColor">#F8F8F8</color>
 
